@@ -1,0 +1,19 @@
+
+.card-img{
+    border-radius: 50%;
+}
+
+.card{
+    margin-top:10%;
+    border: none;
+}
+
+.card img{
+  width: 30%;
+  /* float: left; */
+}
+
+.card-title, .card-text{
+  /* margin-top: 5%; */
+
+}

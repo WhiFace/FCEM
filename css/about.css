@@ -1,0 +1,112 @@
+
+
+.aboutSpace{
+  padding: 10% 0;
+
+}
+.aboutContentImage img{
+  width: 100%;
+  border: 2px solid black;
+}
+.aboutPastor {
+  padding: 3% 7%;
+  overflow: auto;
+  text-align: center;
+
+}
+
+
+.pastorImage {
+  width: 35%;
+  float: left;
+  margin-right:50px;
+  border: 5px solid black;
+
+}
+.imageText{
+  padding: 3%;
+  margin-left: 3rem;
+}
+
+.topDesign{
+  width: 700px;
+  height: 200px;
+  margin: 20px 400px;
+  text-align: center;
+}
+
+.Message{
+  /* background-image:url("../bg-img/middle-section.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 40px; */
+}
+.messageoverlay:before{
+position: absolute;
+content:" ";
+top:0;
+left:0;
+width:100%;
+height:100%;
+display: block;
+z-index:-1;
+background-color: rgba(225,225,0,0.2);
+}
+
+.ml-center{
+  text-align: center;
+  margin: auto;
+}
+
+
+/********************************Beliefs.html***************************************/
+
+.history-title{
+  margin: 5% 0%;
+}
+.res-btn{
+  margin: 2% 0;
+}
+
+
+
+/***************************mission.html**********************/
+
+.e-head{
+  margin-top: 3%;
+  text-align: center;
+  /* margin: auto; */
+}
+
+/* #beliefs{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+} */
+
+
+/**************************Leadership.html*************************************/
+.img-top{
+  width: 40%;
+
+}
+
+.card-img-top{
+  width: 40%;
+}
+
+.leaders-card{
+  border: none;
+}
+
+
+.no-bord{
+  border: none;
+  text-align:center;
+}
+.no-bord img{
+  margin: auto;
+}
