@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -16,14 +15,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/serviceTime.css">
+  <link rel="stylesheet" href="css/media.css">
 
   <title>Faith Chapel</title>
 </head>
 
-<body onload="getSeconds()">
+<body>
 
-
+  <!-- Header section or Title -->
   <!-- Navigation Starts-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -67,13 +66,20 @@
               <a class="dropdown-item" href="Music.html">Music Department</a>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="Media.html">Media</a></li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="Ministries.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sermons.html">Sermons</a>
+              <a class="dropdown-item" href="missions.html">Mission Trips</a>
+              <a class="dropdown-item" href="holyland.html">Holy Land Experience</a>
+            </div>
+          </li>
           <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Navigation Ends-->
+    <!-- Navigation Ends-->
 
 
   <!-- Header Starts-->
@@ -88,22 +94,22 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active slide-one">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Join Us</h2>
-            <p class="lead">Watch us Live</p>
+            <h2 class="display-4">Winning the lost at all cost.</h2>
+            <p class="lead">Disciple . Equipe . Send</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item slide-two">
+        <div class="carousel-item slide-two" >
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Join Us</h2>
-            <p class="lead">Watch us Live</p>
+            <h2 class="display-4">Winning the lost at all cost.</h2>
+            <p class="lead">Disciple . Equipe . Send</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item slide-three">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Join Us</h2>
-            <p class="lead">Watch us Live</p>
+            <h2 class="display-4">Winning the lost at all cost.</h2>
+            <p class="lead">Disciple . Equipe . Send</p>
           </div>
         </div>
       </div>
@@ -117,107 +123,83 @@
       </a>
     </div>
   </header>
-  <!-- Header Starts-->
+    <!-- Header Starts-->
 
 
-  <section class="contact" id="contact">
+  <div class="album text-muted">
+      <div class="container">
+         <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <h4>Recent Sermons</h4>
+                  </div>
+               </div>
+        <div class="row">
 
-    <div class="container">
-      <div class="row">
-
-
-
-        <div class="col timer-center">
-          <h2>Next Event</h2>
-          <div id="countholder">
-            <div><span class="days" id="days"></span>
-              <div class="smalltext">Days</div>
-            </div>
-            <div><span class="hours" id="hours"></span>
-              <div class="smalltext">Hours</div>
-            </div>
-            <div><span class="minutes" id="minutes"></span>
-              <div class="smalltext">Minutes</div>
-            </div>
-            <div><span class="seconds" id="seconds"></span>
-              <div class="smalltext">Seconds</div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
-    <div class="container">
-      <div class="row">
-        <button type="button" class="btn btn-success live-btn" name="button">Watch Live</button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1VL453U8IIhISnLf-xuYRDhV9lD3tMGdD"></iframe>
+          <div class="card">
+                <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
 
-        </div>
-      </div>
 
-    </div>
-
-
-
-    <div class="container new-group1 " >
-      <div class="row">
-        <!-- <div class="col-lg-3"> -->
-        <div class="col-lg-4">
-          <div class="new-group list-group" id="list-tab" role="tablist">
-            <a class="new-group list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Sunday</a>
-            <a class="new-group list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Tuesday</a>
-            <a class="new-group list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Thursday</a>
-            <a class="new-group list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Friday</a>
-          </div>
-        </div>
-
-        <div class="col-lg-8 col-sm">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <h4>Sunday</h4>
-              <p>Sunday School: 10:00 AM - 11:00 AM</p>
-              <p>Service: 11:00 AM - 2:00 PM</p>
-              <p>Address: 3345 Whoville NE, MN 55555</p>
-            </div>
-
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <h4>Tuesday</h4>
-              <p>Bible Study: 6:00 PM - 8:00 PM</p>
-              <p>Address: 3345 Whoville NE, MN 55555</p>
-            </div>
-
-
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <h4>Thursday</h4>
-              <p>Prayer Meeting: 6:00 PM - 7:30 PM</p>
-              <p>Address: 3345 Whoville NE, MN 55555</p>
-            </div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-              <h4>Friday</h4>
-              <p>Praise & Worship Practice: 4:30 PM - 7:00 PM</p>
-              <p>Address: 3345 Whoville NE, MN 55555</p>
-            </div>
-
-
+          <div class="card">
+            <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
 
-          <!-- </div> -->
 
+          <div class="card">
+            <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+
+
+          <div class="card">
+            <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+            <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+           <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+
+          <div class="card">
+           <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+            <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+           <video controls>
+                    <source src="https://vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4" type="video/mp4">
+                </video>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
         </div>
 
       </div>
     </div>
-  </section>
 
 
   <div id="footer">
@@ -267,26 +249,22 @@
       </div>
 
     </div>
-    <div class="social-icons">
+  <div class="social-icons">
 
 
-      <a class="contact-icons" href=""><i class=" fab fa-twitter"></i></a>
-      <a class="contact-icons" href=""><i class=" fab fa-facebook-f"></i></a>
-      <a class="contact-icons" href=""><i class=" fab fa-instagram"></i></a>
-      <a class="contact-icons" href=""><i class=" fas fa-envelope"></i></a>
-      <p class="copyright">© Copyright 2019 Faith Chapel Evangelistic Ministries | All rights reserved</p>
-      <p class="designer"><em>Designed by Benedict Gborkorquellie</em></p>
-    </div>
+    <a class="contact-icons" href=""><i class=" fab fa-twitter"></i></a>
+    <a class="contact-icons" href=""><i class=" fab fa-facebook-f"></i></a>
+    <a class="contact-icons" href=""><i class=" fab fa-instagram"></i></a>
+    <a class="contact-icons" href=""><i class=" fas fa-envelope"></i></a>
+    <p class="copyright">© Copyright 2019 Faith Chapel Evangelistic Ministries | All rights reserved</p>
+    <p class="designer"><em>Designed by Benedict Gborkorquellie</em></p>
+  </div>
   </div>
 
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
