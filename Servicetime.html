@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Sacramento|Ubuntu" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/serviceTime.css">
+
+  <title>Faith Chapel</title>
+</head>
+
+<body onload="getSeconds()">
+
+
+  <!-- Navigation Starts-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href=""><img class="nav-img" src="images/Logo.png" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="Ministries.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pastor.html">Pastor</a>
+              <a class="dropdown-item" href="mother.html">Mother</a>
+              <a class="dropdown-item" href="history.html">History</a>
+              <a class="dropdown-item" href="beliefs.html">Beliefs/Mission..</a>
+              <a class="dropdown-item" href="leadership.html">Leadership</a>
+            </div>
+          </li>
+
+
+
+          <li class="nav-item"><a class="nav-link" href="Servicetime.html">Service Time</a></li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="Ministries.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ministries</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="men.html">Men's Ministry</a>
+              <a class="dropdown-item" href="women.html">Women's Ministry</a>
+              <a class="dropdown-item" href="YoungAdults.html">Young Adults Ministry</a>
+              <a class="dropdown-item" href="youth.html">Youth Ministry</a>
+              <a class="dropdown-item" href="children.html">Children's Ministry</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ushers.html">Ushers Department</a>
+              <a class="dropdown-item" href="Music.html">Music Department</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Media.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Ends-->
+
+
+  <!-- Header Starts-->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active slide-one">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Join Us</h2>
+            <p class="lead">Watch us Live</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item slide-two">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Join Us</h2>
+            <p class="lead">Watch us Live</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item slide-three">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Join Us</h2>
+            <p class="lead">Watch us Live</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+  <!-- Header Starts-->
+
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="col timer-center">
+          <h2>Next Event</h2>
+          <div id="countholder">
+            <div><span class="days" id="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div><span class="hours" id="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div><span class="minutes" id="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div><span class="seconds" id="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <button type="button" class="btn btn-success live-btn" name="button">Watch Live</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1VL453U8IIhISnLf-xuYRDhV9lD3tMGdD"></iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="container new-group1 " >
+      <div class="row">
+        <!-- <div class="col-lg-3"> -->
+        <div class="col-lg-4">
+          <div class="new-group list-group" id="list-tab" role="tablist">
+            <a class="new-group list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Sunday</a>
+            <a class="new-group list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Tuesday</a>
+            <a class="new-group list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Thursday</a>
+            <a class="new-group list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Friday</a>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-sm">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <h4>Sunday</h4>
+              <p>Sunday School: 10:00 AM - 11:00 AM</p>
+              <p>Service: 11:00 AM - 2:00 PM</p>
+              <p>Address: 3345 Whoville NE, MN 55555</p>
+            </div>
+
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <h4>Tuesday</h4>
+              <p>Bible Study: 6:00 PM - 8:00 PM</p>
+              <p>Address: 3345 Whoville NE, MN 55555</p>
+            </div>
+
+
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <h4>Thursday</h4>
+              <p>Prayer Meeting: 6:00 PM - 7:30 PM</p>
+              <p>Address: 3345 Whoville NE, MN 55555</p>
+            </div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <h4>Friday</h4>
+              <p>Praise & Worship Practice: 4:30 PM - 7:00 PM</p>
+              <p>Address: 3345 Whoville NE, MN 55555</p>
+            </div>
+
+
+          </div>
+
+          <!-- </div> -->
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div id="footer">
+
+
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <h3 class="left-footer">About</h3>
+        <ul>
+          <li><a href="#">Belifs</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Pastors</a></li>
+          <li><a href="#">History</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h3 class="left-footer">Ministries</h3>
+        <ul>
+          <li><a href="#">Children</a></li>
+          <li><a href="#">Youth</a></li>
+          <li><a href="#">Young</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Evangelism</a></li>
+          <li><a href="#">Ushers</a></li>
+          <li><a href="#">Fellowship</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h3 class="left-footer">Media</h3>
+        <ul>
+          <li><a href="#">Sermons</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Live Stream</a></li>
+          <li><a href="#">Bible Study</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h3 class="left-footer">Contact Us</h3>
+        <ul>
+          <li><a href="#">Contact Info</a></li>
+          <li><a href="#">Become a member</a></li>
+          <li><a href="#">One on One</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="social-icons">
+
+
+      <a class="contact-icons" href=""><i class=" fab fa-twitter"></i></a>
+      <a class="contact-icons" href=""><i class=" fab fa-facebook-f"></i></a>
+      <a class="contact-icons" href=""><i class=" fab fa-instagram"></i></a>
+      <a class="contact-icons" href=""><i class=" fas fa-envelope"></i></a>
+      <p class="copyright">© Copyright 2019 Faith Chapel Evangelistic Ministries | All rights reserved</p>
+      <p class="designer"><em>Designed by Benedict Gborkorquellie</em></p>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
